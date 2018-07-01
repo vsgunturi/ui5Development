@@ -1,0 +1,9 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+         controllerName ="gvsRouter.controller.Page2"
+		 xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+	<Button text="In Page2" press="onPress2"/>
+		</content>
+	</Page>
+</core:View>

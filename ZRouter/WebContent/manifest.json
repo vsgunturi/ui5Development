@@ -1,0 +1,31 @@
+{
+	"_version": "1.0.0",
+	"start_url": "index.html",
+	"sap.app": {
+		"id": "gvsRouter"
+	},
+	"sap.ui5": {
+		"rootView": "gvsRouter.view.App",
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "gvsRouter.view",
+				"controlId": "idApp",
+				"controlaggregation": "pages"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "homePage",
+					"viewName": "Page1"
+				},
+				{
+					"pattern": "toDetail",
+					"name": "DetailPage",
+					"viewName": "Page2"
+				}
+			]
+		}
+	}
+}
