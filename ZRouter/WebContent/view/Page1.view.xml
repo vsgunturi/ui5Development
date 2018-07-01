@@ -2,8 +2,14 @@
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	controller="gvsRouter.controller.Page1">
-	<Page title="Page1">
+	<Page title="Planned Orders List">
 		<content>
+			<List items="{/PlannedOrderSet}">
+				<items>
+					<StandardListItem title="{Pldordno}"
+						description="{Material}" />
+				</items>
+			</List>
 			<Button text="From Page1" press="onPress" />
 		</content>
 	</Page>

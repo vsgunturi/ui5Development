@@ -2,10 +2,20 @@
 	"_version": "1.0.0",
 	"start_url": "index.html",
 	"sap.app": {
-		"id": "gvsRouter"
+		"id": "gvsRouter",
+		"dataSources": {
+			"demoList": {
+				"uri": "proxy/http/sapngdci.corp.jabil.org:8012/sap/opu/odata/sap/Z_PP_OPT_PLANNEDORDER_SRV/"
+			}
+		}
 	},
 	"sap.ui5": {
 		"rootView": "gvsRouter.view.App",
+		"models": {
+			"": {
+				"dataSource": "demoList"
+			}
+		},
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
